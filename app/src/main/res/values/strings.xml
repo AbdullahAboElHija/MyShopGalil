@@ -2,4 +2,8 @@
     <string name="app_name">MyShop</string>
     <string name="galil_shop">Galil Shop</string>
     <string name="welcome_to_our_shop">Welcome To Our Shop</string>
+    <string name="title_activity_shop_main">ShopMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
