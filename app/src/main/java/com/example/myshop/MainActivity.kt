@@ -3,7 +3,6 @@ package com.example.myshop
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -36,14 +35,13 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
+ ///
     fun loginUser(email: String, password: String) {
         val auth: FirebaseAuth = FirebaseAuth.getInstance()
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Login successful
-                    val user = auth.currentUser
                     Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@MainActivity, EnterActivity::class.java))
                 } else {
