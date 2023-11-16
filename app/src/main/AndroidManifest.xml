@@ -13,12 +13,8 @@
         android:theme="@style/Theme.MyShop"
         tools:targetApi="31">
         <activity
-            android:name=".EnterActivity"
+            android:name=".AdminMainActivity"
             android:exported="false" />
-        <activity
-            android:name=".ShopMainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_shop_main" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

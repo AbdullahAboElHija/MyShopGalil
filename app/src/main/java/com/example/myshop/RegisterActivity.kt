@@ -14,15 +14,14 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterActivity : AppCompatActivity() {
 //define pars
     var database = FirebaseDatabase.getInstance().reference
     var auth: FirebaseAuth = FirebaseAuth.getInstance()
+    var fstore: FirebaseFirestore = FirebaseFirestore.getInstance()
 
-    //
-    //private lateinit var binding: ActivitySignUpBinding
-    //
 
     lateinit var backBtn :Button
     lateinit var regBtn :Button
@@ -60,8 +59,8 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveUserData(name: String, email: String, password: String) {
-        val user = User(name, email, password)
+    private fun saveUserData(name: String, email: String, password: String, userType: String) {
+        val user = User(name, email, password,userType)
         val safeEmail = email.replace(".", "-")
         val userRef = database.child("Users").child(safeEmail).setValue(user)
 
@@ -75,7 +74,7 @@ class RegisterActivity : AppCompatActivity() {
                     // Registration successful
                     val user = auth.currentUser
                     Toast.makeText(this, "Registered Successfully", Toast.LENGTH_SHORT).show()
-                    saveUserData(name,email,password)
+                    saveUserData(name,email,password,"regularUser")
                     Handler().postDelayed(Runnable {
                         startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
                         finish()
