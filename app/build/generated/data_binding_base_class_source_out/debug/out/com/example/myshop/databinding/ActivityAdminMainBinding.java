@@ -4,6 +4,7 @@ package com.example.myshop.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +24,29 @@ public final class ActivityAdminMainBinding implements ViewBinding {
   public final TextView WelcomeMsg;
 
   @NonNull
+  public final Button additemsButtomAdmin;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final Button button3;
+
+  @NonNull
+  public final Button button4;
+
+  @NonNull
   public final TextView textView5;
 
   private ActivityAdminMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView WelcomeMsg,
-      @NonNull TextView textView5) {
+      @NonNull Button additemsButtomAdmin, @NonNull Button button2, @NonNull Button button3,
+      @NonNull Button button4, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.WelcomeMsg = WelcomeMsg;
+    this.additemsButtomAdmin = additemsButtomAdmin;
+    this.button2 = button2;
+    this.button3 = button3;
+    this.button4 = button4;
     this.textView5 = textView5;
   }
 
@@ -65,13 +83,38 @@ public final class ActivityAdminMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.additemsButtomAdmin;
+      Button additemsButtomAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (additemsButtomAdmin == null) {
+        break missingId;
+      }
+
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.button3;
+      Button button3 = ViewBindings.findChildViewById(rootView, id);
+      if (button3 == null) {
+        break missingId;
+      }
+
+      id = R.id.button4;
+      Button button4 = ViewBindings.findChildViewById(rootView, id);
+      if (button4 == null) {
+        break missingId;
+      }
+
       id = R.id.textView5;
       TextView textView5 = ViewBindings.findChildViewById(rootView, id);
       if (textView5 == null) {
         break missingId;
       }
 
-      return new ActivityAdminMainBinding((ConstraintLayout) rootView, WelcomeMsg, textView5);
+      return new ActivityAdminMainBinding((ConstraintLayout) rootView, WelcomeMsg,
+          additemsButtomAdmin, button2, button3, button4, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

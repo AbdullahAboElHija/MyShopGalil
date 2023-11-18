@@ -3209,6 +3209,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id additemsButtomAdmin
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3245,6 +3246,13 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnAddItem
+id btnBack
+id btnShowAll
+id btnUploadImage
+id button2
+id button3
+id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3332,6 +3340,9 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etItemDescription
+id etItemName
+id etItemPrice
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3373,6 +3384,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3654,6 +3666,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uploadingTextView
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3790,6 +3803,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_item
 layout activity_admin_main
 layout activity_main
 layout activity_register

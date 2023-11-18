@@ -60,8 +60,6 @@ class AddItemActivity : AppCompatActivity() {
         binding.uploadingTextView.visibility = View.GONE
         storageRef = FirebaseStorage.getInstance().reference.child("Images")
         firebaseFirestore = FirebaseFirestore.getInstance()
-
-
     }
 
     private fun uploadImage(){
@@ -71,17 +69,16 @@ class AddItemActivity : AppCompatActivity() {
             storageRref.putFile(it).addOnCompleteListener{task->
                 if(task.isSuccessful){
                     storageRref.downloadUrl.addOnSuccessListener { uri->
-                        val map = HashMap<String,Any>()
-                        map["pic"] = uri.toString()
+                        val item = createItem(uri.toString())
+                        val map = HashMap<String,Item>()
+                        map["pic"] = item
                         firebaseFirestore.collection("images").add(map).addOnCompleteListener(){fireStoreTask->
                             if(fireStoreTask.isSuccessful){
                                 Toast.makeText(this,"Uploaded Successfully",Toast.LENGTH_SHORT)
                             }else{
                                 Toast.makeText(this,fireStoreTask.exception?.message,Toast.LENGTH_SHORT)
                             }
-                            binding.imageView.visibility = View.GONE
-                            binding.uploadingTextView.visibility = View.GONE
-
+                            clearText()
                         }
                     }
                 }else{
@@ -89,5 +86,22 @@ class AddItemActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+
+    private fun createItem(uri : String):Item{
+        val itemName = binding.etItemName.text.toString()
+        val itemPrice = binding.etItemPrice.text.toString()
+        val itemDescription = binding.etItemDescription.text.toString()
+        val item = Item(itemName,itemPrice,itemDescription,uri)
+        return item
+    }
+
+    private fun clearText(){
+        binding.etItemDescription.setText("")
+        binding.etItemName.setText("")
+        binding.etItemPrice.setText("")
+        binding.imageView.visibility = View.GONE
+        binding.uploadingTextView.visibility = View.GONE
     }
 }
