@@ -2,15 +2,13 @@ package com.example.myshop
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myshop.databinding.ActivityAddItemBinding
-import com.example.myshop.databinding.ActivityMainBinding
-import com.google.android.gms.auth.api.signin.internal.Storage
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
@@ -44,6 +42,10 @@ class AddItemActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener(){
             startActivity(Intent(this@AddItemActivity,AdminMainActivity::class.java))
         }
+
+        binding.btnShowAll.setOnClickListener(){
+            startActivity(Intent(this@AddItemActivity,ShowingItemsActivity::class.java))
+        }
     }
 
     private val resultLauncher = registerForActivityResult(
@@ -70,9 +72,9 @@ class AddItemActivity : AppCompatActivity() {
                 if(task.isSuccessful){
                     storageRref.downloadUrl.addOnSuccessListener { uri->
                         val item = createItem(uri.toString())
-                        val map = HashMap<String,Item>()
-                        map["pic"] = item
-                        firebaseFirestore.collection("images").add(map).addOnCompleteListener(){fireStoreTask->
+//                        val map = HashMap<String,Item>()
+//                        map["pic"] = item
+                        firebaseFirestore.collection("images").add(item).addOnCompleteListener(){fireStoreTask->
                             if(fireStoreTask.isSuccessful){
                                 Toast.makeText(this,"Uploaded Successfully",Toast.LENGTH_SHORT)
                             }else{
@@ -89,7 +91,7 @@ class AddItemActivity : AppCompatActivity() {
     }
 
 
-    private fun createItem(uri : String):Item{
+    private fun createItem(uri: String):Item{
         val itemName = binding.etItemName.text.toString()
         val itemPrice = binding.etItemPrice.text.toString()
         val itemDescription = binding.etItemDescription.text.toString()

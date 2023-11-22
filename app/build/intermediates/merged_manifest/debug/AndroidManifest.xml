@@ -36,6 +36,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyShop" >
         <activity
+            android:name="com.example.myshop.ShowingItemsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.myshop.AddItemActivity"
             android:exported="false" />
         <activity
@@ -209,6 +212,11 @@
         <uses-library
             android:name="android.ext.adservices"
             android:required="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.myshop.com.squareup.picasso"
+            android:exported="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

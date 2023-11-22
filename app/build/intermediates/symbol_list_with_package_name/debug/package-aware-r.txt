@@ -3151,6 +3151,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TvItemPrice
 id WelcomeMsg
 id accelerate
 id accessibility_action_clickable_span
@@ -3209,6 +3210,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addToCartButton
 id additemsButtomAdmin
 id adjust_height
 id adjust_width
@@ -3230,6 +3232,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backBtnRegisterScreen
+id backToAddItemsScreenButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3385,14 +3388,17 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageViewItemView
 id immediateStop
 id included
 id indeterminate
 id info
 id invisible
 id inward
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
+id itemsToShow
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3524,6 +3530,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -3629,6 +3636,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
 id textView2
 id textView3
 id textView4
@@ -3636,6 +3644,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3661,6 +3670,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvItemDescription
+id tvItemName
 id tvwelcome
 id unchecked
 id uniform
@@ -3807,6 +3818,7 @@ layout activity_add_item
 layout activity_admin_main
 layout activity_main
 layout activity_register
+layout activity_showing_items
 layout activity_splash
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3826,6 +3838,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_toshow
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

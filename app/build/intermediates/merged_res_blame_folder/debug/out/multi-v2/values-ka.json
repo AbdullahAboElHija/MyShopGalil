@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myshop.app-mergeDebugResources-54:/values-ka/values-ka.xml",
+            "outputFile": "com.example.myshop.app-mergeDebugResources-55:/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "C:\\Users\\abode\\.gradle\\caches\\transforms-3\\f1f0454d934ced25b58cdb904f807436\\transformed\\play-services-base-18.1.0\\res\\values-ka\\values.xml",
