@@ -3011,6 +3011,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_exit_to_app_24
+drawable baseline_home_24
+drawable baseline_person_24
+drawable baseline_shopping_cart_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3153,6 +3157,7 @@ id TOP_END
 id TOP_START
 id TvItemPrice
 id WelcomeMsg
+id WelcomeMsgUser
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3240,6 +3245,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3261,6 +3267,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cartRecyclerView
 id center
 id centerCrop
 id centerInside
@@ -3344,6 +3351,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id etItemDescription
+id etItemID
 id etItemName
 id etItemPrice
 id exitUntilCollapsed
@@ -3364,6 +3372,8 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameLayout
+id fremaLayoutOfUser
 id frost
 id fullscreen_header
 id ghost_view
@@ -3388,6 +3398,8 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
+id imageView3
 id imageViewItemView
 id immediateStop
 id included
@@ -3415,6 +3427,7 @@ id list_item
 id locale
 id ltr
 id m3_side_sheet
+id mainRecyclerViewUser
 id marquee
 id masked
 id match_constraint
@@ -3443,7 +3456,6 @@ id matrix
 id message
 id middle
 id mini
-id mobile_navigation
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3483,10 +3495,9 @@ id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
-id navigation_dashboard
+id navigation_cart
 id navigation_header_container
 id navigation_home
-id navigation_notifications
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3534,6 +3545,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id priceCartForUser
 id progress_circular
 id progress_horizontal
 id radio
@@ -3820,6 +3832,7 @@ layout activity_main
 layout activity_register
 layout activity_showing_items
 layout activity_splash
+layout activity_user_main_shop
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3838,6 +3851,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_cart
+layout fragment_home
 layout item_toshow
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3900,11 +3915,10 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu bottom_nav_menu
+menu bottom_nav_user_bar
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
-navigation mobile_navigation
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string abc_action_bar_home_description
@@ -3981,6 +3995,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

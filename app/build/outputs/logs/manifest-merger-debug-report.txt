@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] C:\Users\abode\.gradle\caches\transforms-3\0f729f77ad673844264df9a42652d579\transformed\viewbinding-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\abode\.gradle\caches\transforms-3\20b706896fb52e99841af263e5bdc135\transformed\firebase-database-ktx-20.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\abode\.gradle\caches\transforms-3\21ffe68b2fc88b35c2c55b1a29d1088c\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:2:1-18:12
@@ -113,8 +113,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\abo
 	xmlns:android
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:5:5-39:19
-INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:5:5-39:19
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:5:5-42:19
+INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\abode\.gradle\caches\transforms-3\20b706896fb52e99841af263e5bdc135\transformed\firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\abode\.gradle\caches\transforms-3\20b706896fb52e99841af263e5bdc135\transformed\firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\abode\.gradle\caches\transforms-3\21ffe68b2fc88b35c2c55b1a29d1088c\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:8:5-16:19
@@ -209,52 +209,58 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\abode\.gradle\cach
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:13:9-44
 	android:dataExtractionRules
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.myshop.ShowingItemsActivity
+activity#com.example.myshop.User.UserMainShopActivity
 ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:16:13-49
-activity#com.example.myshop.AddItemActivity
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:16:13-54
+activity#com.example.myshop.Admin.ShowingItemsActivity
 ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:19:13-44
-activity#com.example.myshop.AdminMainActivity
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:19:13-55
+activity#com.example.myshop.Admin.AddItemActivity
 ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:22:13-46
-activity#com.example.myshop.RegisterActivity
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:22:13-50
+activity#com.example.myshop.Admin.AdminMainActivity
 ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:25:13-52
+activity#com.example.myshop.RegLog.RegisterActivity
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:28:13-52
 activity#com.example.myshop.SplashActivity
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:27:9-35:20
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:30:9-38:20
 	android:exported
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:28:13-43
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:31:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:33:27-74
-activity#com.example.myshop.MainActivity
-ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:36:9-38:39
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:36:27-74
+activity#com.example.myshop.RegLog.MainActivity
+ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:39:9-41:39
 	android:exported
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:37:13-41
+		ADDED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml:40:13-48
 uses-sdk
 INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\abode\AndroidStudioProjects\ShopAppGalil\app\src\main\AndroidManifest.xml

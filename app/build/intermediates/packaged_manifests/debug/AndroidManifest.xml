@@ -36,16 +36,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyShop" >
         <activity
-            android:name="com.example.myshop.ShowingItemsActivity"
+            android:name="com.example.myshop.User.UserMainShopActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myshop.AddItemActivity"
+            android:name="com.example.myshop.Admin.ShowingItemsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myshop.AdminMainActivity"
+            android:name="com.example.myshop.Admin.AddItemActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myshop.RegisterActivity"
+            android:name="com.example.myshop.Admin.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myshop.RegLog.RegisterActivity"
             android:exported="false" />
         <activity
             android:name="com.example.myshop.SplashActivity"
@@ -57,7 +60,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myshop.MainActivity"
+            android:name="com.example.myshop.RegLog.MainActivity"
             android:exported="true" />
 
         <service

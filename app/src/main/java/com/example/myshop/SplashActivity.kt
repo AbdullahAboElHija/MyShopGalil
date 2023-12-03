@@ -2,12 +2,12 @@ package com.example.myshop
 
 import android.content.Intent
 import android.graphics.Typeface
-import android.net.sip.SipErrorCode.TIME_OUT
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myshop.RegLog.MainActivity
 
 
 class SplashActivity : AppCompatActivity() {

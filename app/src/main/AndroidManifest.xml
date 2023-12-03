@@ -13,19 +13,19 @@
         android:theme="@style/Theme.MyShop"
         tools:targetApi="31">
         <activity
-            android:name=".UserMainShopActivity"
+            android:name=".User.UserMainShopActivity"
             android:exported="false" />
         <activity
-            android:name=".ShowingItemsActivity"
+            android:name=".Admin.ShowingItemsActivity"
             android:exported="false" />
         <activity
-            android:name=".AddItemActivity"
+            android:name=".Admin.AddItemActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminMainActivity"
+            android:name=".Admin.AdminMainActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".RegLog.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".RegLog.MainActivity"
             android:exported="true" />
     </application>
 
